@@ -9,7 +9,7 @@ from .permissions import IsOwnerOrReadOnly
 #   serializer_class = RecipeSerializer
 
 class RecipeList(generics.ListCreateAPIView):
-  permission_classes = (IsOwnerOrReadOnly,)
+  #permission_classes = (IsOwnerOrReadOnly,)
   queryset = Recipe.objects.all()
   serializer_class = RecipeSerializer
 
